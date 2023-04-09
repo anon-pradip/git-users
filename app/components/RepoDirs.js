@@ -14,14 +14,13 @@ const RepoDirs = async ({ name }) => {
   return (
     <div className='mt-3'>
       <h3 className=' font-bold'>Directories</h3>
-      <ul>
+      <ul className='max-w-md space-y-1 list-disc list-inside'>
         {dirs.map((dir) => (
-          <li key={dir.path}>
-            <Link href={`/code/repos/${name}/${dir.path}`}>{dir.path}</Link>
+          <li key={dir.path} className='ml-4'>
+            <Link href={`/code/repos/${name}/${dir.path}`} className=' text-blue-900 font-medium underline'>{dir.path}</Link>
           </li>
         ))}
       </ul>
-
     </div>
   )
 }
