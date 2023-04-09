@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Football",
+    "description": "Get the latest football news, scores, and updates.",
+    "link": "https://www.espn.com/soccer/"
+  },
+  {
+    "id": 1,
+    "title": "Basketball",
+    "description": "Stay up to date with the NBA and college basketball news and highlights.",
+    "link": "https://www.nba.com/"
+  },
+  {
+    "id": 3,
+    "title": "Baseball",
+    "description": "Follow the MLB season and get the latest scores, stats, and highlights.",
+    "link": "https://www.mlb.com/"
+  },
+  {
+    "id": 4,
+    "title": "Tennis",
+    "description": "Get the latest tennis news, scores, and rankings from around the world.",
+    "link": "https://www.atptour.com/"
+  },
+  {
+    "id": 5,
+    "title": "Golf",
+    "description": "Stay up to date with the latest golf news, scores, and highlights.",
+    "link": "https://www.pgatour.com/"
+  },
+  {
+    "id": 6,
+    "title": "Mixed Martial Arts",
+    "description": "Follow the UFC and other mixed martial arts organizations for the latest news, fights, and highlights.",
+    "link": "https://www.ufc.com/"
+  },
+  {
+    "id": 7,
+    "title": "Extreme Sports",
+    "description": "Get the latest news and highlights from the world of extreme sports, including snowboarding, skateboarding, and surfing.",
+    "link": "https://www.redbull.com/int-en/athletes"
+  }
+]

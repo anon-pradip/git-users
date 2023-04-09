@@ -13,7 +13,7 @@ const page = async () => {
   const repos = await getRepos()
   return (
     <div className="px-2">
-      <p className=" font-bold text-xl py-3">Repositories</p>
+      <p className=" font-bold text-xl py-3 text-center">Repositories</p>
       <div className=" flex flex-col space-y-2 justify-center items-center">
         {repos.map((repo) => (
           <Link

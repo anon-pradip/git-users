@@ -1,12 +1,32 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+"use client"
+import React from 'react'
+import { useState, useEffect } from 'react'
+import Loading from './loading'
+import Sports from './components/Sports'
+import SportSearch from './components/SportSearch'
+const page = () => {
+  const [sports, setSports] = useState([])
+  const [loading, setLoading] = useState(true)
 
-const inter = Inter({ subsets: ['latin'] })
+  useEffect(() => {
+    const fetchSports = async () => {
+      const res = await fetch("api/sports")
+      const data = await res.json()
+      setSports(data)
+      setLoading(false)
+    }
+    fetchSports()
+  }, [])
 
-export default function Home() {
+  if (loading) {
+    return <Loading />
+  }
   return (
-    <main className="text-3xl font-bold">
-      <h1>hello</h1>
-    </main>
+    <div className='max-w-md mx-auto'>
+      <SportSearch getSearchResults={(results) => setSports(results)} />
+      <Sports sports={sports} />
+    </div>
   )
 }
+
+export default page
