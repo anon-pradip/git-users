@@ -2,9 +2,9 @@ import Link from 'next/link'
 import React from 'react'
 
 const fetchRepoContents = async (name) => {
+  await new Promise((resolve) => setTimeout(resolve, 3000))
   const res = await fetch(`https://api.github.com/repos/anon-pradip/${name}/contents`)
   const contents = await res.json()
-  await new Promise((resolve) => setTimeout(resolve, 3000))
   return contents
 }
 
